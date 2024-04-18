@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "./componentes/Card";
 import "./App.css";
 
-function generarNumerosAleatorios() {
+function idaleatorio() {
   const numeros = [];
   for (let i = 0; i < 10; i++) {
     numeros.push(Math.floor(Math.random() * 857));
@@ -14,7 +14,7 @@ function generarNumerosAleatorios() {
 function App() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character/" + generarNumerosAleatorios())
+    fetch("https://rickandmortyapi.com/api/character/" + idaleatorio())
       .then((resp) => {
         return resp.json();
       })
