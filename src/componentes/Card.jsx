@@ -6,11 +6,11 @@ import "./Card.css";
 const Card = (props) => {
   const user = props.user;
   //console.log (user);
-  const sociallinks = user["Social-links"]
+  //const sociallinks = user["Social-links"]
   return (
     <div className="contenedorDinamico">
       <UserDetails user={user} />
-      <ButtonSection sociallinks = {sociallinks}/>
+      {/* <ButtonSection sociallinks = {sociallinks}/> */}
     </div>
   );
 };

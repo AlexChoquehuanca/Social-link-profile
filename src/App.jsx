@@ -2,16 +2,24 @@ import React, { useState, useEffect } from "react";
 import Card from "./componentes/Card";
 import "./App.css";
 
+function generarNumerosAleatorios() {
+  const numeros = [];
+  for (let i = 0; i < 10; i++) {
+    numeros.push(Math.floor(Math.random() * 857));
+  }
+  numeros.toString();
+  return numeros;
+}
+
 function App() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch("https://661037d10640280f219c9906.mockapi.io/api/v2/Users")
+    fetch("https://rickandmortyapi.com/api/character/" + generarNumerosAleatorios())
       .then((resp) => {
         return resp.json();
       })
       .then((data) => {
         setUsers(data);
-        //console.log(data);
       });
   }, []);
 
