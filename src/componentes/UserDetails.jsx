@@ -14,12 +14,11 @@ const UserDetails = ({user}) => {
         ></img>
       </div>
       <h1 className="nombre">{user.name}</h1>
-      <h1 className="letratitulo"> Estado:</h1>
-      <h1 className="letranormal">{user.status} </h1>
+      <button className="letranormal">{user.status} </button>
       <h1 className="letratitulo"> Especie:</h1>
-      <h1 className="letranormal">{user.species} </h1>
+      <p className="letranormal">{user.species} </p>
       <h1 className="letratitulo"> Género:</h1>
-      <h1 className="letranormal">{user.gender} </h1>
+      <p className="letranormal">{user.gender} </p>
     </div>
   );
 };

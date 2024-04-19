@@ -6,15 +6,15 @@
     align-content: center;
   }
   .redonda{
-    border-radius: 100%;
-    width: 80px;
-    height: 80px;
+    border-radius: 20%;
+    width: 200px;
+    height: 150px;
   }
   
   .contenedorImagen{
     width: auto;
     height: auto;
-    margin-top: 20px;
+    margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -35,7 +35,7 @@
     display: flex;
     margin:0px;
     color:  var(--Green);
-    font-size: small;
+    font-size: normal;
     justify-content: center;
   }
   
