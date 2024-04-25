@@ -1,25 +1,11 @@
-.Contenedor1{
-    width: 500px;
+.Contenedor2{
+    width: 200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-  }
-  .redonda{
-    border-radius: 20%;
-    width: 500px;
-    height: 300px;
-  }
-  
-  .contenedorImagen{
-    width: auto;
-    height: auto;
-    margin-top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    align-content: center;
-  
+    border-radius: 5%;
+    background:  var(--OffBlack);
   }
   
 .nombre{
@@ -53,17 +39,4 @@
   .inter-Normal {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-  }
-
-  button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    display: flex;
   }
